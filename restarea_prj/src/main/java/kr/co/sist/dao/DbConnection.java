@@ -2,10 +2,10 @@ package kr.co.sist.dao;
 
 
 import java.sql.Connection;
-
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -45,11 +45,11 @@ public class DbConnection {
 	}//getConn
 	
 	
-	public void closeCon( ResultSet rs, Statement stmt, Connection con)
+	public void closeCon( ResultSet rs, PreparedStatement pstmt, Connection con)
 	throws SQLException{
 		try {
 			if(rs != null) { rs.close(); }//end if
-			if(stmt != null) { stmt.close(); }//end if	
+			if(pstmt != null) { pstmt.close(); }//end if	
 		}finally { 
 			if(con != null) { con.close(); }//end if
 		}//end finally

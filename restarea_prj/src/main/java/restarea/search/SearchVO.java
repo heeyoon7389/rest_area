@@ -1,4 +1,4 @@
-package kr.co.sist.inquiry;
+package restarea.search;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

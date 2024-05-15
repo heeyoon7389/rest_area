@@ -1,8 +1,8 @@
-package kr.co.sist.inquiry;
+package restarea.announce;
+
 
 
 import java.sql.Date;
-
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,17 +15,14 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class InquirydetailVO {
+public class AnnounceVO {
 	
-	private String inquirynum;
-	private String memid;
+	private String announce_num;
+	private String managerid;
 	private String title;
 	private String content;
 	private Date input_date;
-	private boolean secret_flag;
-	private String answer_contents;
-	private Date answer_date;
-	private boolean answer_flag;
+	private int announce_view;
 	
 
 }
